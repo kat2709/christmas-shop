@@ -1,3 +1,21 @@
+$primary: #ff4646;
+$static-white: #ffffff;
+$dark: #181c29;
+
+@mixin action-small {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@mixin img-position {
+  background-size: cover;
+  background-position: 0px;
+}
+
 * {
   margin: 0;
   list-style: none;
@@ -12,12 +30,7 @@ body {
 
 header {
   padding: 12px 82px;
-  font-family: "Montserrat";
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  @include action-small;
 }
 
 .header-container {
@@ -33,29 +46,29 @@ header {
   padding: 0 20px;
 }
 
-nav ul {
-  display: flex;
-  gap: 8px;
-  padding: 0;
-}
-nav li {
-  padding: 12px 20px;
+nav {
+  ul {
+    display: flex;
+    gap: 8px;
+    padding: 0;
+  }
+  li {
+    padding: 12px 20px;
+  }
 }
 
 .gifts {
-  background-color: #ff4646;
+  background-color: $primary;
   background-image: url(./assets/pictures/bg-ball.png);
   height: 524px;
-  color: #ffffff;
-  background-size: cover;
-  background-position: 0px;
+  color: $static-white;
+  @include img-position;
 }
 
 .snow-container {
   background-image: url(./assets/pictures/bg-snow.png);
   height: 524px;
-  background-size: cover;
-  background-position: 0px;
+  @include img-position;
 }
 
 .gifts-container {
@@ -87,16 +100,11 @@ h1 {
 }
 
 .explore-btn {
-  font-family: "Montserrat";
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  @include action-small;
   width: 236px;
   padding: 20px 32px;
   cursor: pointer;
-  background-color: #181c29;
-  color: #ffffff;
+  background-color: $dark;
+  color: $static-white;
   border-radius: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
