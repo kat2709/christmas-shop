@@ -108,3 +108,56 @@ h1 {
   color: $static-white;
   border-radius: 20px;
 }
+
+.about {
+  background-color: $primary;
+  background-image: url(./assets/pictures/bg-snow.png);
+  height: 648px;
+  padding: 60px 82px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $static-white;
+  border-radius: 20px;
+}
+
+.about-description {
+  width: 426px;
+  display: flex;
+  margin-left: 60px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary {
+  color: $primary;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+.about-img {
+  background-image: url(./assets/pictures/santa.png);
+  background-size: cover;
+  width: 638px;
+  height: 528px;
+  border-radius: 20px;
+}
