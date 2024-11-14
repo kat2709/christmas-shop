@@ -12,6 +12,7 @@ body {
 
 header {
   padding: 12px 82px;
+  color: #181c29;
   font-family: "Montserrat";
   font-size: 12px;
   font-weight: 600;
@@ -124,6 +125,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  color: #181c29;
 }
 
 .primary {
@@ -152,4 +154,85 @@ h2 {
   width: 638px;
   height: 528px;
   border-radius: 20px;
+}
+
+.slider-section {
+  padding: 60px 0 59px 0;
+  background-image: url(./assets/pictures/bg-snow.png);
+  background-size: cover;
+  background-position: 0px;
+  background-color: #ff4646;
+}
+
+.slider-title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: #ffffff;
+  gap: 13px;
+  padding-left: 3px;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.slider {
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20.5px;
+  left: 83px;
+}
+.slider p {
+  font-family: "Montserrat";
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.slider img {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  border-radius: 20px;
+}
+
+.pagination-box {
+  padding: 0 81px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 21px;
+}
+.pagination-box button {
+  width: 56px;
+  height: 56px;
+  background-color: #ff4646;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-left {
+  background-size: contain;
+  width: 12.5px;
+  height: 12px;
+  background-image: url(./assets/icons/arr-left-inactive.svg);
+}
+
+.arrow-right {
+  background-size: contain;
+  width: 12.5px;
+  height: 12px;
+  background-image: url(./assets/icons/arr-right.svg);
+}
+
+.active-btn {
+  border: 1px solid #ffffff;
+}
+
+.inactive-btn {
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }/*# sourceMappingURL=style.css.map */
