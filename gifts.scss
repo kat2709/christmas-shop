@@ -1,0 +1,57 @@
+$primary: #ff4646;
+$static-white: #ffffff;
+$static-white20: #ffffff33;
+
+@mixin img-position {
+  background-size: cover;
+  background-position: 0px;
+}
+
+@mixin action-small {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+main {
+  background-image: url(./assets/pictures/bg-garland.png);
+  @include img-position;
+  background-color: $primary;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $static-white;
+}
+
+h1 {
+  width: 400px;
+}
+
+.gifts-tabs {
+  @include action-small;
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+
+.active-tab {
+  background-color: $static-white20;
+}
+
+.gifts-box {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
