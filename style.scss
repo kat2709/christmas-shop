@@ -2,6 +2,10 @@ $primary: #ff4646;
 $static-white: #ffffff;
 $static-white40: #ffffff66;
 $dark: #181c29;
+$content-background: #ecf3f8;
+$tag-purple: #4361ff;
+$tag-pink: #ff43f7;
+$tag-green: #06a44f;
 
 @mixin action-small {
   font-family: "Montserrat";
@@ -248,4 +252,75 @@ h2 {
 
 .inactive-btn {
   border: 1px solid $static-white40;
+}
+
+.best-gifts {
+  padding: 60px 80px;
+  background-color: $primary;
+  background-image: url(./assets/pictures/bg-snow.png);
+  @include img-position;
+  color: $static-white;
+  text-align: center;
+}
+
+.best-gifts-title {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-left: 3px;
+}
+
+.best-gifts-box {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.best-gifts-card {
+  border-radius: 20px;
+  background-color: $static-white;
+  width: 310px;
+  color: $dark;
+  img {
+    background-color: $content-background;
+    width: 310px;
+    border-radius: 20px;
+  }
+  h3 {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  h4 {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+
+.card-title-box {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0px 18px 20px;
+  gap: 9px;
+}
+
+.tag-pirple {
+  color: $tag-purple;
+}
+
+.tag-green {
+  color: $tag-green;
+}
+
+.tag-pink {
+  color: $tag-pink;
 }
