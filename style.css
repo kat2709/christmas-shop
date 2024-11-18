@@ -8,6 +8,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 header {
@@ -41,6 +42,11 @@ nav ul {
 }
 nav li {
   padding: 12px 20px;
+}
+
+main {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .gifts {
@@ -271,7 +277,8 @@ h2 {
   width: 310px;
   border-radius: 20px;
 }
-.best-gifts-card h3 {
+
+h3 {
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 600;
@@ -280,7 +287,8 @@ h2 {
   text-transform: uppercase;
   text-align: left;
 }
-.best-gifts-card h4 {
+
+h4 {
   font-family: "Montserrat";
   font-size: 12px;
   font-weight: 600;
@@ -307,4 +315,55 @@ h2 {
 
 .tag-pink {
   color: #ff43f7;
+}
+
+.cta-section {
+  height: 668px;
+  background-color: #ff4646;
+  background-image: url(./assets/pictures/bg-forest.png);
+  background-size: cover;
+  background-position: 0px;
+}
+
+.cta-title-box {
+  display: flex;
+  width: 426px;
+  margin: 0 auto;
+  padding: 181px 0;
+  text-align: center;
+  color: #ffffff;
+  flex-direction: column;
+  gap: 19.5px;
+  align-items: center;
+}
+
+.timer {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-top: 8px;
+  padding: 8px 12px 12px 15px;
+  width: 344px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.timer-cell {
+  display: flex;
+  width: 80px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.separator {
+  position: relative;
+}
+
+.separator:after {
+  content: "";
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 30%;
+  right: 2%;
+  height: 39%;
+  width: 0.5px;
 }/*# sourceMappingURL=style.css.map */
