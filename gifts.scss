@@ -1,24 +1,19 @@
-$primary: #ff4646;
-$static-white: #ffffff;
-$static-white20: #ffffff33;
+@use "variables" as *;
 
-@mixin img-position {
-  background-size: cover;
-  background-position: 0px;
+.inactive-gifts {
+  pointer-events: none;
+  background-color: $primary10;
+  border-radius: 12px;
 }
 
-@mixin action-small {
-  font-family: "Montserrat";
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+.link-style-inactive {
+  color: $primary;
 }
 
 main {
   background-image: url(./assets/pictures/bg-garland.png);
-  @include img-position;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-color: $primary;
   padding: 60px;
   display: flex;
@@ -42,9 +37,11 @@ h1 {
 .tab {
   padding: 12px 20px;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .active-tab {
+  pointer-events: none;
   background-color: $static-white20;
 }
 
@@ -54,4 +51,11 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
+}
+
+@media (hover: hover) {
+  .tab:hover {
+    transition: 0.5s linear;
+    background-color: $static-white20;
+  }
 }

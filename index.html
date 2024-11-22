@@ -11,26 +11,34 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link type="Image/x-icon" href="./assets/icons/snowflake.svg" rel="icon" />
     <title>Christmas Shop</title>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <div class="logo-box">
-          <img
-            src="./assets/icons/snowflake.svg"
-            width="24px"
-            height="24px"
-            alt="snowflake"
-          />
-          <p>The gifts</p>
+        <div>
+          <a href="./index.html">
+            <div class="logo-box">
+              <img src="./assets/icons/snowflake.svg" alt="snowflake" />
+              <p>The gifts</p>
+            </div>
+          </a>
         </div>
         <nav>
           <ul>
-            <li>gifts</li>
-            <li>about</li>
-            <li>best</li>
-            <li>contacts</li>
+            <li>
+              <a class="link-style" href="./gifts.html">gifts</a>
+            </li>
+            <li>
+              <a class="link-style" href="#about">about</a>
+            </li>
+            <li>
+              <a class="link-style" href="#best">best</a>
+            </li>
+            <li>
+              <a class="link-style" href="#contacts">contacts</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -41,12 +49,14 @@
           <div class="gifts-container">
             <p class="caption">Merry Christmas</p>
             <h1>Gift yourself the magic of new possibilities</h1>
-            <button class="explore-btn">Explore Magical Gifts</button>
+            <a href="./gifts.html"
+              ><div class="explore-btn">Explore Magical Gifts</div></a
+            >
             <p class="caption">and Happy New Year</p>
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-container">
           <div class="about-description">
             <p class="caption primary">About</p>
@@ -68,53 +78,99 @@
         <div class="slider-container">
           <div class="slider">
             <p class="slider-text">live</p>
-            <img src="./assets/pictures/snowman.png" />
+            <img src="./assets/pictures/snowman.png" alt="snowman" />
             <p class="slider-text">create</p>
-            <img src="./assets/pictures/christmas-trees.png" />
+            <img
+              src="./assets/pictures/christmas-trees.png"
+              alt="christmas-trees"
+            />
             <p class="slider-text">love</p>
-            <img src="./assets/pictures/christmas-tree-ball.png" />
+            <img
+              src="./assets/pictures/christmas-tree-ball.png"
+              alt="christmas-tree-ball"
+            />
             <p class="slider-text">dream</p>
-            <img src="./assets/pictures/fairytale-house.png" />
+            <img
+              src="./assets/pictures/fairytale-house.png"
+              alt="fairytale-house"
+            />
           </div>
 
           <div class="pagination-box">
-            <button class="inactive-btn">
-              <div class="arrow-left"></div>
+            <button class="inactive-btn arrow">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 7H1M1 7L7 1M1 7L7 13"
+                  stroke-opacity="0.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
-            <button class="active-btn">
-              <div class="arrow-right"></div>
+            <button class="arrow">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 7H13.5M13.5 7L7.5 1M13.5 7L7.5 13"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           </div>
         </div>
       </section>
-      <section class="best-gifts">
+      <section class="best-gifts" id="best">
         <div class="best-gifts-title">
           <p class="caption">Best Gifts</p>
           <h2>especially for you</h2>
           <div class="best-gifts-box">
             <div class="best-gifts-card">
-              <img src="./assets/pictures/gift-for-work.png" />
+              <img
+                src="./assets/pictures/gift-for-work.png"
+                alt="gift-for-work.png"
+              />
               <div class="card-title-box">
                 <h4 class="tag-pirple">For work</h4>
                 <h3>Console.log Guru</h3>
               </div>
             </div>
             <div class="best-gifts-card">
-              <img src="./assets/pictures/gift-for-health.png" />
+              <img
+                src="./assets/pictures/gift-for-health.png"
+                alt="gift-for-health.png"
+              />
               <div class="card-title-box">
                 <h4 class="tag-green">For health</h4>
                 <h3>Hydration Bot</h3>
               </div>
             </div>
             <div class="best-gifts-card">
-              <img src="./assets/pictures/gift-for-work.png" />
+              <img
+                src="./assets/pictures/gift-for-work.png"
+                alt="gift-for-work.png"
+              />
               <div class="card-title-box">
                 <h4 class="tag-pirple">For work</h4>
                 <h3>Merge Master</h3>
               </div>
             </div>
             <div class="best-gifts-card">
-              <img src="./assets/pictures/gift-for-harmony.png" />
+              <img
+                src="./assets/pictures/gift-for-harmony.png"
+                alt="gift-for-harmony.png"
+              />
               <div class="card-title-box">
                 <h4 class="tag-pink">For harmony</h4>
                 <h3>Spontaneous Coding Philosopher</h3>
@@ -129,8 +185,9 @@
             <h2>
               Ready to start your journey to a better version of yourself?
             </h2>
-            <button class="explore-btn">Explore Magical Gifts</button>
-
+            <a href="./gifts.html"
+              ><div class="explore-btn">Explore Magical Gifts</div></a
+            >
             <div class="cta-section-box">
               <p class="caption">The New Year is Coming Soon...</p>
               <div class="timer">
@@ -157,35 +214,128 @@
       </section>
     </main>
     <footer>
-      <div class="contacts">
-        <div class="contacts-card">
-          <img src="./assets/icons/santa-claus.svg" alt="santa-icon" />
-          <p>+375 (29) 111-22-33</p>
-          <h3>Call Us</h3>
-        </div>
-        <div class="contacts-card">
-          <img
-            src="./assets/icons/christmas-tree.svg"
-            alt="christmas-tree-icon"
-          />
-          <p>Magic forest</p>
-          <h3>meet us</h3>
-        </div>
-        <div class="contacts-card">
-          <img src="./assets/icons/snake.svg" alt="snake" />
-          <p>gifts@magic.com</p>
-          <h3>write us</h3>
-        </div>
+      <div class="contacts" id="contacts">
+        <a class="link-text" href="tel:375291112233" target="_blank">
+          <div class="contacts-card">
+            <img src="./assets/icons/santa-claus.svg" alt="santa-icon" />
+            <p class="contacts-text">+375 (29) 111-22-33</p>
+            <h3 class="contacts-title">Call Us</h3>
+          </div>
+        </a>
+        <a
+          class="link-text"
+          href="https://www.google.com/maps/place/Akropolis+Klaip%C4%97da/@55.6929329,21.1516028,17z/data=!3m1!4b1!4m6!3m5!1s0x46e4dbfabb2d8639:0x3e94dca18846bdc1!8m2!3d55.692933!4d21.1564737!16s%2Fg%2F1vd6__zp?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+        >
+          <div class="contacts-card">
+            <img
+              src="./assets/icons/christmas-tree.svg"
+              alt="christmas-tree-icon"
+            />
+            <p class="contacts-text">Magic forest</p>
+            <h3 class="contacts-title">meet us</h3>
+          </div>
+        </a>
+        <a href="mailto:gifts@magic.com" target="_blank">
+          <div class="contacts-card">
+            <img src="./assets/icons/snake.svg" alt="snake" />
+            <p class="contacts-text">gifts@magic.com</p>
+            <h3 class="contacts-title">write us</h3>
+          </div>
+        </a>
       </div>
       <div class="socials-box">
         <div class="social">
-          <div><img src="./assets/icons/telegram.svg" alt="telegram" /></div>
-          <div><img src="./assets/icons/facebook.svg" alt="facebook" /></div>
-          <div><img src="./assets/icons/instagram.svg" alt="instagram" /></div>
-          <div><img src="./assets/icons/x.svg" alt="x" /></div>
+          <div class="social-item">
+            <div class="social-item-img">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 21 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 1L1 8.5L8 9.5M20 1L17.5 16L8 9.5M20 1L8 9.5M8 9.5V15L11.2488 11.7229"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="social-item">
+            <div class="social-item-img">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 13 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="social-item">
+            <div class="social-item-img">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M17.5 6.51L17.51 6.49889"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="social-item">
+            <div class="social-item-img">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M20 3L4 21"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
         <p class="text">© Copyright 2025, All Rights Reserved</p>
-        <p class="caption">Made in Rolling Scopes School</p>
+        <a href="https://rs.school/" target="_blank">
+          <p class="caption rss-link">Made in Rolling Scopes School</p>
+        </a>
       </div>
     </footer>
   </body>
