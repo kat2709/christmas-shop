@@ -9,7 +9,7 @@
 }
 
 main {
-  background-image: url(./assets/pictures/bg-garland.png);
+  background-image: url(../assets/pictures/bg-garland.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #ff4646;
@@ -61,4 +61,6 @@ h1 {
     transition: 0.5s linear;
     background-color: rgba(255, 255, 255, 0.2);
   }
-}/*# sourceMappingURL=gifts.css.map */
+}
+
+/*# sourceMappingURL=gifts.css.map */

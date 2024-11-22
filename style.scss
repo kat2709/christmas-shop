@@ -84,14 +84,14 @@ main {
 
 .gifts {
   background-color: $primary;
-  background-image: url(./assets/pictures/bg-ball.png);
+  background-image: url(../assets/pictures/bg-ball.png);
   height: 524px;
   color: $static-white;
   @include img-position;
 }
 
 .snow-container {
-  background-image: url(./assets/pictures/bg-snow.png);
+  background-image: url(../assets/pictures/bg-snow.png);
   height: 524px;
   @include img-position;
 }
@@ -136,7 +136,7 @@ h1 {
 
 .about {
   background-color: $primary;
-  background-image: url(./assets/pictures/bg-snow.png);
+  background-image: url(../assets/pictures/bg-snow.png);
   height: 648px;
   padding: 61px 82px;
   background-size: cover;
@@ -181,7 +181,7 @@ h2 {
 }
 
 .about-img {
-  background-image: url(./assets/pictures/santa.png);
+  background-image: url(../assets/pictures/santa.png);
   background-size: cover;
   width: 638px;
   height: 528px;
@@ -190,7 +190,7 @@ h2 {
 
 .slider-section {
   padding: 60px 0 59px 0;
-  background-image: url(./assets/pictures/bg-snow.png);
+  background-image: url(../assets/pictures/bg-snow.png);
   @include img-position;
   background-color: $primary;
 }
@@ -264,7 +264,7 @@ h2 {
 .best-gifts {
   padding: 60px 80px;
   background-color: $primary;
-  background-image: url(./assets/pictures/bg-snow.png);
+  background-image: url(../assets/pictures/bg-snow.png);
   @include img-position;
   color: $static-white;
   text-align: center;
@@ -338,7 +338,7 @@ h4 {
 .cta-section {
   height: 668px;
   background-color: $primary;
-  background-image: url(./assets/pictures/bg-forest.png);
+  background-image: url(../assets/pictures/bg-forest.png);
   @include img-position;
 }
 

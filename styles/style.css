@@ -70,7 +70,7 @@ main {
 
 .gifts {
   background-color: #ff4646;
-  background-image: url(./assets/pictures/bg-ball.png);
+  background-image: url(../assets/pictures/bg-ball.png);
   height: 524px;
   color: #ffffff;
   background-size: cover;
@@ -78,7 +78,7 @@ main {
 }
 
 .snow-container {
-  background-image: url(./assets/pictures/bg-snow.png);
+  background-image: url(../assets/pictures/bg-snow.png);
   height: 524px;
   background-size: cover;
   background-position: 0px;
@@ -129,7 +129,7 @@ h1 {
 
 .about {
   background-color: #ff4646;
-  background-image: url(./assets/pictures/bg-snow.png);
+  background-image: url(../assets/pictures/bg-snow.png);
   height: 648px;
   padding: 61px 82px;
   background-size: cover;
@@ -174,7 +174,7 @@ h2 {
 }
 
 .about-img {
-  background-image: url(./assets/pictures/santa.png);
+  background-image: url(../assets/pictures/santa.png);
   background-size: cover;
   width: 638px;
   height: 528px;
@@ -183,7 +183,7 @@ h2 {
 
 .slider-section {
   padding: 60px 0 59px 0;
-  background-image: url(./assets/pictures/bg-snow.png);
+  background-image: url(../assets/pictures/bg-snow.png);
   background-size: cover;
   background-position: 0px;
   background-color: #ff4646;
@@ -254,7 +254,7 @@ h2 {
 .best-gifts {
   padding: 60px 80px;
   background-color: #ff4646;
-  background-image: url(./assets/pictures/bg-snow.png);
+  background-image: url(../assets/pictures/bg-snow.png);
   background-size: cover;
   background-position: 0px;
   color: #ffffff;
@@ -330,7 +330,7 @@ h4 {
 .cta-section {
   height: 668px;
   background-color: #ff4646;
-  background-image: url(./assets/pictures/bg-forest.png);
+  background-image: url(../assets/pictures/bg-forest.png);
   background-size: cover;
   background-position: 0px;
 }
@@ -479,4 +479,6 @@ footer {
   .social-item:hover > .social-item-img svg path {
     stroke: #ff4646;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
