@@ -24,7 +24,7 @@ main {
 }
 
 h1 {
-  width: 400px;
+  max-width: 400px;
 }
 
 .gifts-tabs {
@@ -57,5 +57,32 @@ h1 {
   .tab:hover {
     transition: 0.5s linear;
     background-color: $static-white20;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 60px 8px;
+  }
+  .tab {
+    padding: 12px 8px;
+  }
+  .gifts-tabs {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .gifts-tabs {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 28px;
+  }
+  .tab {
+    font-size: 10px;
   }
 }

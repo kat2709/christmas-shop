@@ -40,6 +40,10 @@ header {
   color: #181c29;
 }
 
+.burger-menu {
+  display: none;
+}
+
 nav ul {
   display: flex;
   gap: 8px;
@@ -85,13 +89,13 @@ main {
 }
 
 .gifts-container {
-  padding: 120px 0;
+  padding: 120px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 12px;
-  width: 430px;
+  max-width: 430px;
   margin: 0 auto;
 }
 
@@ -144,9 +148,10 @@ h1 {
 }
 
 .about-description {
-  width: 426px;
+  padding: 0 30px 0 60px;
+  width: 100%;
+  max-width: 510px;
   display: flex;
-  margin-left: 60px;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -177,6 +182,7 @@ h2 {
   background-image: url(../assets/pictures/santa.png);
   background-size: cover;
   width: 638px;
+  min-width: 376px;
   height: 528px;
   border-radius: 20px;
 }
@@ -270,6 +276,8 @@ h2 {
 
 .best-gifts-box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin-top: 5px;
 }
@@ -337,7 +345,7 @@ h4 {
 
 .cta-title-box {
   display: flex;
-  width: 426px;
+  max-width: 426px;
   margin: 0 auto;
   padding: 180px 0;
   text-align: center;
@@ -478,6 +486,110 @@ footer {
   }
   .social-item:hover > .social-item-img svg path {
     stroke: #ff4646;
+  }
+}
+@media (max-width: 1439px) {
+  .gifts {
+    background-position: center;
+  }
+  .best-gifts {
+    padding: 60px 30px;
+  }
+  .about-img {
+    background-position: center;
+  }
+}
+@media (max-width: 1420px) {
+  .cta-section {
+    background-position: center;
+  }
+}
+@media (max-width: 1300px) {
+  header {
+    padding: 12px 8px;
+  }
+  .about {
+    padding: 61px 8px;
+  }
+  .about-description {
+    padding: 0 45px 0 60px;
+  }
+  .slider {
+    left: 8px;
+  }
+  .best-gifts-title {
+    margin-left: 0px;
+  }
+  .pagination-box {
+    padding: 0 8px;
+  }
+  .contacts {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contacts-card {
+    gap: 12px;
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+  .burger-menu div {
+    width: 20px;
+    height: 1px;
+    background-color: #181c29;
+  }
+}
+@media (max-width: 768px) and (max-width: 700px) {
+  .about {
+    height: auto;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-description {
+    max-width: none;
+    padding: 60px 20px;
+  }
+  .about-img {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .slider-section {
+    padding: 57px 0 59px 0;
+  }
+  .gifts {
+    height: 572px;
+  }
+  .gifts-container {
+    padding: 120px 10px;
+  }
+  .snow-container {
+    padding: 0 8px;
+  }
+  .best-gifts {
+    padding: 60px 8px;
+  }
+  .cta-section {
+    height: 705px;
+  }
+  footer {
+    padding: 60px 8px;
   }
 }
 
