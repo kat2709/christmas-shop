@@ -5,9 +5,13 @@
   text-decoration: none;
   scroll-behavior: smooth;
   transition: 0.5s linear;
+  position: relative;
+  overflow-x: clip;
 }
 
 body {
+  position: relative;
+  overflow-x: clip;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -16,7 +20,6 @@ body {
 }
 
 header {
-  padding: 12px 82px;
   color: #181c29;
   font-family: "Montserrat";
   font-size: 12px;
@@ -27,6 +30,7 @@ header {
 }
 
 .header-container {
+  padding: 12px 82px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,15 +210,16 @@ h2 {
 
 .slider-container {
   overflow: hidden;
+  padding-left: 83px;
 }
 
 .slider {
+  width: 2130px;
   padding: 20px 0;
   position: relative;
   display: flex;
   align-items: center;
   gap: 20.5px;
-  left: 83px;
 }
 .slider p {
   font-family: "Montserrat";
@@ -256,6 +261,9 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.4);
   pointer-events: none;
 }
+.inactive-btn svg path {
+  stroke: rgba(255, 255, 255, 0.2);
+}
 
 .best-gifts {
   padding: 60px 80px;
@@ -285,13 +293,12 @@ h2 {
 .best-gifts-card {
   cursor: pointer;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: #ecf3f8;
   width: 310px;
   height: 342px;
   color: #181c29;
 }
 .best-gifts-card img {
-  background-color: #ecf3f8;
   width: 310px;
   border-radius: 20px;
 }
@@ -317,9 +324,12 @@ h4 {
 }
 
 .card-title-box {
+  height: 109px;
+  background-color: #ffffff;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  padding: 18px 0px 18px 20px;
+  padding: 18px 20px;
   gap: 9px;
 }
 
@@ -505,7 +515,7 @@ footer {
   }
 }
 @media (max-width: 1300px) {
-  header {
+  .header-container {
     padding: 12px 8px;
   }
   .about {
@@ -514,8 +524,11 @@ footer {
   .about-description {
     padding: 0 45px 0 60px;
   }
+  .slider-container {
+    padding-left: 8px;
+  }
   .slider {
-    left: 8px;
+    width: 2030px;
   }
   .best-gifts-title {
     margin-left: 0px;
@@ -533,8 +546,21 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .body-menu-opened {
+    height: 100vh;
+    overflow-y: clip;
+  }
   nav {
-    display: none;
+    position: absolute;
+    height: 100vh;
+  }
+  nav a {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
   }
   .burger-menu {
     display: flex;
@@ -551,8 +577,57 @@ footer {
     height: 1px;
     background-color: #181c29;
   }
+  .top-line-cross {
+    transition: 0.2s linear;
+    transform: translate(0, 4px) rotate(45deg);
+  }
+  .bottom-line-cross {
+    transition: 0.2s linear;
+    transform: translate(0, -4px) rotate(-45deg);
+  }
+  .nav-closed {
+    transform: translate(200%);
+    transition: all 0.3s linear;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 48px;
+    right: 0;
+    width: 0%;
+    height: 100vh;
+    z-index: 10;
+    background-color: #ffffff;
+  }
+  .nav-closed ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu-opened {
+    transform: translate(0%);
+    width: 100%;
+  }
+  .scroll-to-top {
+    z-index: 20;
+    bottom: 7px;
+    right: 7px;
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #ff4646;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0s linear;
+  }
+  .arrow-up svg path {
+    stroke: #ff4646;
+  }
+  .hidden-btn {
+    display: none;
+  }
 }
-@media (max-width: 768px) and (max-width: 700px) {
+@media (max-width: 700px) {
   .about {
     height: auto;
   }
@@ -569,7 +644,7 @@ footer {
     min-width: 0;
   }
 }
-@media (max-width: 768px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .slider-section {
     padding: 57px 0 59px 0;
   }

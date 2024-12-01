@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    >
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/gifts.css">
-    <link type="Image/x-icon" href="./assets/icons/snowflake.svg" rel="icon">
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/gifts.css" />
+    <link type="Image/x-icon" href="./assets/icons/snowflake.svg" rel="icon" />
     <title>Gifts</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="header-container">
         <div>
           <a href="./index.html">
             <div class="logo-box">
-              <img
-                src="./assets/icons/snowflake.svg"
-                alt="snowflake"
-              >
+              <img src="./assets/icons/snowflake.svg" alt="snowflake" />
               <p>The gifts</p>
             </div>
           </a>
@@ -33,7 +30,7 @@
           <div class="top-line"></div>
           <div class="bottom-line"></div>
         </div>
-        <nav>
+        <nav id="navigation" class="nav-closed">
           <ul>
             <li class="inactive-gifts">
               <a class="link-style-inactive link-style">gifts</a>
@@ -65,7 +62,7 @@
       <div class="contacts" id="contacts">
         <a class="link-text" href="tel:375291112233" target="_blank">
           <div class="contacts-card">
-            <img src="./assets/icons/santa-claus.svg" alt="santa-icon">
+            <img src="./assets/icons/santa-claus.svg" alt="santa-icon" />
             <p class="contacts-text">+375 (29) 111-22-33</p>
             <h3 class="contacts-title">Call Us</h3>
           </div>
@@ -79,14 +76,14 @@
             <img
               src="./assets/icons/christmas-tree.svg"
               alt="christmas-tree-icon"
-            >
+            />
             <p class="contacts-text">Magic forest</p>
             <h3 class="contacts-title">meet us</h3>
           </div>
         </a>
         <a href="mailto:gifts@magic.com" target="_blank">
           <div class="contacts-card">
-            <img src="./assets/icons/snake.svg" alt="snake">
+            <img src="./assets/icons/snake.svg" alt="snake" />
             <p class="contacts-text">gifts@magic.com</p>
             <h3 class="contacts-title">write us</h3>
           </div>
@@ -186,6 +183,34 @@
         </a>
       </div>
     </footer>
-    <script type="module" src="./js/gifts.js"></script>
+    <button class="scroll-to-top hidden-btn">
+      <a href="#top">
+        <div class="arrow-up">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 5V19" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M18 11L12 5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 11L12 5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </a>
+    </button>
+    <script defer type="module" src="./js/gifts.js"></script>
+    <script defer type="module" src="./js/burger-menu.js"></script>
+    <script defer type="module" src="./js/switch-category.js"></script>
+    <script defer type="module" src="./js/scroll-to-top.js"></script>
   </body>
 </html>

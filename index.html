@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    >
-    <link rel="stylesheet" href="./styles/style.css">
-    <link type="Image/x-icon" href="./assets/icons/snowflake.svg" rel="icon">
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link type="Image/x-icon" href="./assets/icons/snowflake.svg" rel="icon" />
     <title>Christmas Shop</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="header-container">
         <div>
           <a href="./index.html">
             <div class="logo-box">
-              <img src="./assets/icons/snowflake.svg" alt="snowflake">
+              <img src="./assets/icons/snowflake.svg" alt="snowflake" />
               <p>The gifts</p>
             </div>
           </a>
@@ -29,7 +29,7 @@
           <div class="top-line"></div>
           <div class="bottom-line"></div>
         </div>
-        <nav>
+        <nav id="navigation" class="nav-closed">
           <ul>
             <li>
               <a class="link-style" href="./gifts.html">gifts</a>
@@ -82,26 +82,26 @@
         <div class="slider-container">
           <div class="slider">
             <p class="slider-text">live</p>
-            <img src="./assets/pictures/snowman.png" alt="snowman">
+            <img src="./assets/pictures/snowman.png" alt="snowman" />
             <p class="slider-text">create</p>
             <img
               src="./assets/pictures/christmas-trees.png"
               alt="christmas-trees"
-            >
+            />
             <p class="slider-text">love</p>
             <img
               src="./assets/pictures/christmas-tree-ball.png"
               alt="christmas-tree-ball"
-            >
+            />
             <p class="slider-text">dream</p>
             <img
               src="./assets/pictures/fairytale-house.png"
               alt="fairytale-house"
-            >
+            />
           </div>
 
           <div class="pagination-box">
-            <button class="inactive-btn arrow">
+            <button id="arrow-left" class="inactive-btn arrow">
               <svg
                 width="14"
                 height="14"
@@ -111,13 +111,12 @@
               >
                 <path
                   d="M13.5 7H1M1 7L7 1M1 7L7 13"
-                  stroke-opacity="0.4"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
               </svg>
             </button>
-            <button class="arrow">
+            <button id="arrow-right" class="arrow">
               <svg
                 width="14"
                 height="14"
@@ -139,48 +138,7 @@
         <div class="best-gifts-title">
           <p class="caption">Best Gifts</p>
           <h2>especially for you</h2>
-          <div class="best-gifts-box">
-            <div class="best-gifts-card">
-              <img
-                src="./assets/pictures/gift-for-work.png"
-                alt="gift-for-work.png"
-              >
-              <div class="card-title-box">
-                <h4 class="tag-pirple">For work</h4>
-                <h3>Console.log Guru</h3>
-              </div>
-            </div>
-            <div class="best-gifts-card">
-              <img
-                src="./assets/pictures/gift-for-health.png"
-                alt="gift-for-health.png"
-              >
-              <div class="card-title-box">
-                <h4 class="tag-green">For health</h4>
-                <h3>Hydration Bot</h3>
-              </div>
-            </div>
-            <div class="best-gifts-card">
-              <img
-                src="./assets/pictures/gift-for-work.png"
-                alt="gift-for-work.png"
-              >
-              <div class="card-title-box">
-                <h4 class="tag-pirple">For work</h4>
-                <h3>Merge Master</h3>
-              </div>
-            </div>
-            <div class="best-gifts-card">
-              <img
-                src="./assets/pictures/gift-for-harmony.png"
-                alt="gift-for-harmony.png"
-              >
-              <div class="card-title-box">
-                <h4 class="tag-pink">For harmony</h4>
-                <h3>Spontaneous Coding Philosopher</h3>
-              </div>
-            </div>
-          </div>
+          <div class="best-gifts-box"></div>
         </div>
       </section>
       <section class="cta-section">
@@ -196,19 +154,19 @@
               <p class="caption">The New Year is Coming Soon...</p>
               <div class="timer">
                 <div class="timer-cell separator">
-                  <h2>47</h2>
+                  <h2 id="cta-days">47</h2>
                   <h4>days</h4>
                 </div>
                 <div class="timer-cell separator">
-                  <h2>5</h2>
+                  <h2 id="cta-hours">5</h2>
                   <h4>hours</h4>
                 </div>
                 <div class="timer-cell separator">
-                  <h2>34</h2>
+                  <h2 id="cta-minutes">34</h2>
                   <h4>minutes</h4>
                 </div>
                 <div class="timer-cell">
-                  <h2>12</h2>
+                  <h2 id="cta-seconds">12</h2>
                   <h4>seconds</h4>
                 </div>
               </div>
@@ -221,7 +179,7 @@
       <div class="contacts" id="contacts">
         <a class="link-text" href="tel:375291112233" target="_blank">
           <div class="contacts-card">
-            <img src="./assets/icons/santa-claus.svg" alt="santa-icon">
+            <img src="./assets/icons/santa-claus.svg" alt="santa-icon" />
             <p class="contacts-text">+375 (29) 111-22-33</p>
             <h3 class="contacts-title">Call Us</h3>
           </div>
@@ -235,14 +193,14 @@
             <img
               src="./assets/icons/christmas-tree.svg"
               alt="christmas-tree-icon"
-            >
+            />
             <p class="contacts-text">Magic forest</p>
             <h3 class="contacts-title">meet us</h3>
           </div>
         </a>
         <a href="mailto:gifts@magic.com" target="_blank">
           <div class="contacts-card">
-            <img src="./assets/icons/snake.svg" alt="snake">
+            <img src="./assets/icons/snake.svg" alt="snake" />
             <p class="contacts-text">gifts@magic.com</p>
             <h3 class="contacts-title">write us</h3>
           </div>
@@ -342,5 +300,35 @@
         </a>
       </div>
     </footer>
+    <button class="scroll-to-top hidden-btn">
+      <a href="#top">
+        <div class="arrow-up">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 5V19" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M18 11L12 5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 11L12 5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </a>
+    </button>
+    <script defer type="module" src="./js/burger-menu.js"></script>
+    <script defer type="module" src="./js/slider.js"></script>
+    <script defer type="module" src="./js/random-gifts.js"></script>
+    <script defer type="module" src="./js/cta.js"></script>
+    <script defer type="module" src="./js/scroll-to-top.js"></script>
   </body>
 </html>
