@@ -5,7 +5,6 @@
   text-decoration: none;
   scroll-behavior: smooth;
   transition: 0.5s linear;
-  position: relative;
   overflow-x: clip;
 }
 
@@ -463,6 +462,85 @@ footer {
   color: #181c29;
 }
 
+.scroll-to-top {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff4646;
+  border-radius: 9em;
+}
+
+.gift-modal {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #ecf3f8;
+  border-radius: 20px;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  width: 400px;
+}
+
+dialog::backdrop {
+  background: rgba(25, 29, 42, 0.8);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.cross {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.dialog-img {
+  margin-top: -35px;
+  max-width: 400px;
+  width: 100%;
+  max-height: 295px;
+}
+
+.dialog-gift-box {
+  margin-top: -35px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px;
+  gap: 9px;
+}
+
+.powers-box-title {
+  margin-top: 10px;
+}
+
+.power-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.power-title {
+  width: 184px;
+  text-transform: capitalize;
+}
+
+.raiting-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 @media (hover: hover) {
   .best-gifts-card:hover > .card-title-box > h3 {
     color: #ff4646;
@@ -608,6 +686,9 @@ footer {
     width: 100%;
   }
   .scroll-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 20;
     bottom: 7px;
     right: 7px;
@@ -665,6 +746,27 @@ footer {
   }
   footer {
     padding: 60px 8px;
+  }
+}
+@media (max-width: 435px) {
+  .gift-modal {
+    max-width: 364px;
+    width: 100%;
+  }
+  .power-title {
+    width: 148px;
+  }
+  .dialog-gift-box {
+    margin-top: -25px;
+  }
+}
+@media (max-width: 370px) {
+  .gift-modal {
+    max-width: 350px;
+    width: 100%;
+  }
+  .power-title {
+    width: 135px;
   }
 }
 
