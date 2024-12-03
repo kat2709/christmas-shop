@@ -1,0 +1,88 @@
+@use "variables" as *;
+
+.inactive-gifts {
+  pointer-events: none;
+  background-color: $primary10;
+  border-radius: 12px;
+}
+
+.link-style-inactive {
+  color: $primary;
+}
+
+main {
+  background-image: url(../assets/pictures/bg-garland.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $primary;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $static-white;
+}
+
+h1 {
+  max-width: 400px;
+}
+
+.gifts-tabs {
+  @include action-small;
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.active-tab {
+  pointer-events: none;
+  background-color: $static-white20;
+}
+
+.gifts-box {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (hover: hover) {
+  .tab:hover {
+    transition: 0.5s linear;
+    background-color: $static-white20;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 60px 8px;
+  }
+  .tab {
+    padding: 12px 8px;
+  }
+  .gifts-tabs {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .gifts-tabs {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 28px;
+  }
+  .tab {
+    font-size: 10px;
+  }
+}

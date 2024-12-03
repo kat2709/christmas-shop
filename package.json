@@ -1,0 +1,14 @@
+{
+  "name": "christmas-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server .",
+    "build": "npx sass ./style.scss:./styles/style.css ./gifts.scss:./styles/gifts.css",
+    "watch": "npm run build -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

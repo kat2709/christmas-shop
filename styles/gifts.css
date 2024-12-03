@@ -1,0 +1,90 @@
+.inactive-gifts {
+  pointer-events: none;
+  background-color: rgba(255, 70, 70, 0.1019607843);
+  border-radius: 12px;
+}
+
+.link-style-inactive {
+  color: #ff4646;
+}
+
+main {
+  background-image: url(../assets/pictures/bg-garland.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ff4646;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+h1 {
+  max-width: 400px;
+}
+
+.gifts-tabs {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.active-tab {
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gifts-box {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (hover: hover) {
+  .tab:hover {
+    transition: 0.5s linear;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 60px 8px;
+  }
+  .tab {
+    padding: 12px 8px;
+  }
+  .gifts-tabs {
+    gap: 5px;
+  }
+}
+@media (max-width: 430px) {
+  .gifts-tabs {
+    gap: 0px;
+  }
+}
+@media (max-width: 370px) {
+  h1 {
+    font-size: 28px;
+  }
+  .tab {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=gifts.css.map */
